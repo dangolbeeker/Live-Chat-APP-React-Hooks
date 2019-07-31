@@ -5,22 +5,40 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles(theme => ({
   root: {
+    margin: "50px",
     padding: theme.spacing(3, 2),
   },
+  flex: {
+  topicsWindow: {
+
+  },
+  chatWindow: {
+
+  },
+  chatBox: {
+
+  },
+  button: {
+    
+  }
 }));
 
-export default function PaperSheet() {
+export default function Dashboard() {
+
   const classes = useStyles();
 
   return (
     <div>
       <Paper className={classes.root}>
-        <Typography variant="h5" component="h3">
-          This is a sheet of paper.
+        <Typography variant="h4" component="h4">
+         Chat app
         </Typography>
-        <Typography component="p">
-          Paper can be used to build surface or other elements for your application.
+        <Typography variant="h5" component="h5">
+         Topic plaeholder
         </Typography>
+        <div className={classes.flex}>
+
+        </div>
       </Paper>
     </div>
   );
