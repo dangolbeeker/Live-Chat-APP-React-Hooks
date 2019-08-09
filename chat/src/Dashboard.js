@@ -52,7 +52,22 @@ export default function Dashboard() {
         </Typography>
         <div className={classes.flex}>
           <div className={classes.topicsWindow}>
+          <list>
+{
 
+          
+          [].map(topic => (
+            <ListItem button>
+         
+          <ListItemText primary={topic}/>
+          <ListItem key={topic} button>
+
+          </ListItem>
+        </ListItem>
+        })
+        }
+
+          </list>
 
           </div>
           <div className={classes.chatWindow}>
@@ -63,15 +78,3 @@ export default function Dashboard() {
             <div className={classes.chatBox}
 
 
-// </div>
-// <List>
-//               ['topic'].map(topic => (
-//     <ListItem key={topic}
-//   ))
-// </List>
-
-//           </div>
-//       </Paper>
-//     </div>
-//       );
-// }
